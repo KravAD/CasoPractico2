@@ -187,3 +187,61 @@ Ventana Óptima (segmentos) = 1,500,000 bytes ÷ 1460 bytes/segmento
 Ventana Óptima (segmentos) ≈ 1027 segmentos
 ```
 
+## Capa de Aplicación
+
+###  Servicios Clave  
+- **Transferencia de archivos (FTP/SFTP)**:  
+  - *Para qué sirve*: Subir y bajar materiales grandes (ej: PDFs, videos).  
+  - *Seguridad*: SFTP protege los archivos con cifrado (como un "candado digital").  
+
+- **Contenido multimedia (HTTP/HTTPS)**:  
+  - *Para qué sirve*: Acceder a clases grabadas o conferencias desde cualquier dispositivo.  
+  - *Seguridad*: HTTPS garantiza que nadie espíe lo que ves (ideal para exámenes o datos sensibles).  
+
+### Resolución de Nombres (DNS)  
+Imagina que el DNS es como la "agenda de contactos" de la red:  
+- Traduce nombres fáciles (ej: `campus.edu`) a direcciones IPv6 complejas (ej: `2001:db8:10::10`).  
+- *Ejemplo práctico*: Los estudiantes escriben `aula.campus.edu` en su navegador, y el DNS les lleva al servidor correcto.  
+
+###  Streaming Adaptativo (DASH)  
+¿Te ha pasado que Netflix baja la calidad si tu internet va lento? Así funciona DASH en el campus:  
+- *Cómo trabaja*:  
+  - Los videos se dividen en "trocitos" de 5-10 segundos en distintas calidades (HD, media, baja).  
+  - Si tu conexión es buena: HD sin buffering.  
+  - Si el WiFi falla: Cambia automáticamente a una calidad menor para que no se pause.  
+- *Beneficio*: Todos ven contenido sin interrupciones, aunque tengan conexiones distintas.  
+
+### Manejo de Muchas Conexiones  
+Cuando cientos de usuarios piden cosas al mismo tiempo:  
+- *Multiplexación*: Organiza las solicitudes usando "canales" virtuales (como carriles en una autopista).  
+  - Ejemplo: HTTP usa el "canal 80", HTTPS el "443", y cada solicitud viaja sin chocar con las demás.  
+- *Capacidad*: El servidor puede atender hasta 50 peticiones simultáneas (como tener 50 ventanillas abiertas).  
+
+###  Configuración Simple  
+- *En Cisco Packet Tracer*:  
+  - Los routers y servidores se programan para gestionar FTP, HTTP, DNS y DASH.  
+  - ¡Sin comandos complicados! Todo se ajusta desde menús visuales.  
+
+# Estimación de Costes del Proyecto de Red (Actualizada)
+
+| Elemento                             |   Cantidad |   Precio Unitario (€) |   Subtotal (€) |
+|:-------------------------------------|-----------:|----------------------:|---------------:|
+| Routers Cisco 2911                   |          5 |                 850   |           4250 |
+| Switches Cisco Catalyst 2960 (PT)    |          5 |                 400   |           2000 |
+| Switch Central PT (Core)             |          1 |                 400   |            400 |
+| Access Points                        |          3 |                 250   |            750 |
+| PCs / Laptops / Dispositivos Cliente |         10 |                 500   |           5000 |
+| Servidores (DNS, Web, FTP)           |          3 |                 900   |           2700 |
+| ASA 5506-X (Firewall)                |          1 |                 800   |            800 |
+| Cables de fibra multimodo (LC-LC)    |        200 |                   0.8 |            160 |
+| Cables de cobre Cat6                 |       2500 |                   0.4 |           1000 |
+| Rack y montaje                       |          1 |                1000   |           1000 |
+| Home Gateway IoT                     |          5 |                 150   |            750 |
+| Detectores de Humo IoT               |          5 |                  50   |            250 |
+| Cámaras de Videovigilancia IoT       |          3 |                 180   |            540 |
+| Altavoces Inteligentes IoT           |          4 |                 120   |            480 |
+| Servidor de Correo Electrónico       |          1 |                 900   |            900 |
+
+*Coste total estimado: 23000.00 €*
+
+
