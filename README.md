@@ -30,9 +30,7 @@ Donde:
 
 Para convertir la **Relación Señal a Ruido (SNR)** de **dB** a **forma lineal**, se utiliza la siguiente fórmula:
 
-\[
-SNR_{lineal} = 10^{\frac{SNR_{dB}}{10}}
-\]
+$$ \text{SNR}_{\text{lineal}} = 10^{\frac{\text{SNR}_{\text{dB}}}{10}} $$
 
 A continuación se presentan los resultados calculados para cada enlace crítico identificado en la topología de red:
 
