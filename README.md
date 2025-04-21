@@ -13,6 +13,8 @@ Enlace Repositorio GitHub --> https://github.com/KravAD/CasoPractico2.git
 | **Capa Presentación** | Aplicación        | Se encarga de comprimir, cifrar y codificar los datos.                 |
 | **Capa Aplicación**   | Aplicación        | Obtiene los datos directamente del usuario.                            |
 
+![image](https://github.com/user-attachments/assets/204f4fd1-a1bc-4a21-b58e-70776d1bdef6)
+
 
 ## Cálculo de la Capacidad Teórica de los Enlaces Críticos Usando la Fórmula de Shannon
 
