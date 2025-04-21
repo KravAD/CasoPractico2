@@ -1,6 +1,19 @@
 # CasoPractico2
 Enlace Repositorio GitHub --> https://github.com/KravAD/CasoPractico2.git
 
+## Modelado de la Comunicación (OSI/TCP-IP)
+
+| Capa OSI             | Capa TCP/IP     | Función                                                                 |
+|----------------------|------------------|-------------------------------------------------------------------------|
+| **Capa Física**       | Acceso a red     | Transmite los datos por un medio físico.                               |
+| **Capa Enlace de datos** | Acceso a red     | Controla el flujo de datos, detecta y corrige errores e identifica dispositivos mediante direcciones MAC. |
+| **Capa Red**          | Acceso a red     | Usa direcciones IP y se encarga de direccionar y enrutar los paquetes de datos. |
+| **Capa Transporte**   | Transporte        | Asegura la llegada de los datos en orden y que sean completos. <br> - **TCP**: confiable pero lento (ideal para transferencia de archivos). <br> - **UDP**: no confiable pero rápido (ideal para multimedia en streaming). |
+| **Capa Sesión**       | Aplicación        | Gestiona la comunicación entre dispositivos y mantiene activa la sesión. |
+| **Capa Presentación** | Aplicación        | Se encarga de comprimir, cifrar y codificar los datos.                 |
+| **Capa Aplicación**   | Aplicación        | Obtiene los datos directamente del usuario.                            |
+
+
 ## Cálculo de la Capacidad Teórica de los Enlaces Críticos Usando la Fórmula de Shannon
 
 Para estimar la capacidad máxima de los enlaces más importantes de la red, se utilizó la fórmula de Shannon:
@@ -17,47 +30,42 @@ A continuación se presentan los resultados calculados para cada enlace crítico
 
 
 
-### Enlace entre el Switch Core y los servidores (Servers-PT) ubicados en un búnker subterráneo a 30 metros
+### Enlace entre el Switch central y los servidores (Servers-PT) ubicados en un búnker subterráneo a 30 metros
 
 - **Distancia:** 30 metros
 - **SNR estimado:** 3162.3 (equivalente a 35 dB)
 - **Capacidad teórica:** 11.63 Gbps
 
-### Enlace entre el Switch Core y el Router de Secretaría
+### Enlace entre el Switch central y el Router de Secretaría
 
 - **Distancia:** 200 metros
 - **SNR estimado:** 10,000 (equivalente a 40 dB)
 - **Capacidad teórica:** 13.29 Gbps
 
-### Enlace entre el Switch Core y el Router del Recinto
+### Enlace entre el Switch central y el Router del Recinto
 
 - **Distancia:** 200 metros
 - **SNR estimado:** 10,000 (40 dB)
 - **Capacidad teórica:** 13.29 Gbps
 
-### Enlace entre el Switch Core y el Router de la Sala de Videoconferencia
+### Enlace entre el Switch central y el Router de la Sala de Videoconferencia
 
 - **Distancia:** 200 metros
 - **SNR estimado:** 10,000 (40 dB)
 - **Capacidad teórica:** 13.29 Gbps
 
-### Enlace entre el Switch Core y el Router del Laboratorio
+### Enlace entre el Switch central y el Router del Laboratorio
 
 - **Distancia:** 200 metros
 - **SNR estimado:** 10,000 (40 dB)
 - **Capacidad teórica:** 13.29 Gbps
 
-### Enlace entre el Switch Core y el Router Externo, que representa otro edificio a 3 km de distancia
+### Enlace entre el Switch central y el Router Externo, que representa otro edificio a 3 km de distancia
 
 - **Distancia:** 3 km
 - **SNR estimado:** 316.2 (25 dB)
 - **Capacidad teórica:** 8.31 Gbps
 
-### Enlace entre los servidores (Servers-PT) y el Router Externo (pasando por el Switch DMZ y Switch Core)
-
-- **Distancia:** 3 km
-- **SNR estimado:** 316.2 (25 dB)
-- **Capacidad teórica:** 8.31 Gbps
   
 ## Modulaciones
 
