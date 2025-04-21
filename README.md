@@ -113,3 +113,6 @@ En IPv6 no existe el broadcast tradicional de IPv4. En su lugar, se utilizan dir
 - **`ff02::2`**:  
   Reservado para la comunicación exclusiva entre **routers** en la subred.  
   Ejemplo: Intercambio de rutas en protocolos como OSPFv3.
+  
+- **Hosts por subred**: Cada subred `/64` permite hasta **2^64 hosts** (≈ 18 trillones de direcciones).
+- **Formato de direcciones**: Los hosts válidos van desde `<prefijo>::1` hasta `<prefijo>:0:ffff:ffff:ffff:ffff`.
