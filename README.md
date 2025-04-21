@@ -1,7 +1,7 @@
 # CasoPractico2
 Enlace Repositorio GitHub --> https://github.com/KravAD/CasoPractico2.git
 
-## Modelado de la Comunicación (OSI/TCP-IP)
+# Modelado de la Comunicación (OSI/TCP-IP)
 
 | Capa OSI             | Capa TCP/IP     | Función                                                                 |
 |----------------------|------------------|-------------------------------------------------------------------------|
@@ -15,7 +15,7 @@ Enlace Repositorio GitHub --> https://github.com/KravAD/CasoPractico2.git
 
 ![image](https://github.com/user-attachments/assets/204f4fd1-a1bc-4a21-b58e-70776d1bdef6)
 
-
+# Capa Física
 ## Cálculo de la Capacidad Teórica de los Enlaces Críticos Usando la Fórmula de Shannon
 
 Para estimar la capacidad máxima de los enlaces más importantes de la red, se utilizó la fórmula de Shannon:
@@ -93,3 +93,23 @@ A continuación se presentan los resultados calculados para cada enlace crítico
 - **Fast Ethernet (100 Mbps)**: Se emplea **PAM-4** debido a que necesita 4 niveles de amplitud para transmitir a 100 Mbps de manera confiable.
 - **Comunicaciones inalámbricas (Wi-Fi)**: Se usa **64-QAM** cuando las condiciones de la señal son óptimas, ya que ofrece una alta eficiencia espectral, permitiendo transmitir más bits por símbolo, pero adaptándose a condiciones variables de señal mediante modulación adaptativa.
 
+# Capa de Red
+
+### Subredes IPv6
+| **Subred IPv6**       | **Rango de Hosts**                                      |
+|-----------------------|--------------------------------------------------------|
+| `2001:DB8:10::/64`    | `2001:DB8:10::1` - `2001:DB8:10:0:ffff:ffff:ffff:ffff` |
+| `2001:DB8:20::/64`    | `2001:DB8:20::1` - `2001:DB8:20:0:ffff:ffff:ffff:ffff` |
+| `2001:DB8:30::/64`    | `2001:DB8:30::1` - `2001:DB8:30:0:ffff:ffff:ffff:ffff` |
+| `2001:DB8:40::/64`    | `2001:DB8:40::1` - `2001:DB8:40:0:ffff:ffff:ffff:ffff` |
+| `2001:DB8:50::/64`    | `2001:DB8:50::1` - `2001:DB8:50:0:ffff:ffff:ffff:ffff` |
+
+### Direcciones Multicast en IPv6
+En IPv6 no existe el broadcast tradicional de IPv4. En su lugar, se utilizan direcciones multicast:
+- **`ff02::1`**:  
+  Equivalente al broadcast en IPv4. Se usa para comunicarse con **todos los dispositivos** en la subred.  
+  Ejemplo: Descubrimiento de vecinos (*Neighbor Discovery*).
+
+- **`ff02::2`**:  
+  Reservado para la comunicación exclusiva entre **routers** en la subred.  
+  Ejemplo: Intercambio de rutas en protocolos como OSPFv3.
