@@ -120,3 +120,59 @@ En IPv6 no existe el broadcast tradicional de IPv4. En su lugar, se utilizan dir
 ## Dijkstra
 ![Imagen de WhatsApp 2025-04-21 a las 23 03 07_5ec83c0c](https://github.com/user-attachments/assets/ec21ceef-efe7-4611-a800-eb7821e4f53c)
 
+
+#  Capa de Transporte
+
+## Decisión de Protocolos
+| **Protocolo** | **Aplicación**         | **Justificación**                                                                 |
+|---------------|------------------------|-----------------------------------------------------------------------------------|
+| **TCP**       | Transferencia de archivos (FTP/SFTP) | - **Orientado a conexión**: Garantiza entrega confiable mediante ACKs.<br>- **Control de congestión**: Adapta dinámicamente la tasa de transmisión.<br>- **Retransmisión de paquetes perdidos**: Ideal para integridad de datos. |
+| **UDP**       | Streaming multimedia   | - **Sin conexión**: Minimiza sobrecarga y latencia.<br>- **Tolerancia a pérdidas**: Paquetes perdidos no afectan significativamente la experiencia.<br>- **Prioriza velocidad**: No espera confirmaciones. |
+
+---
+
+## Cálculo del Tamaño Óptimo de la Ventana TCP
+#### **Parámetros Clave**
+| **Variable**          | **Valor**               |
+|-----------------------|-------------------------|
+| MTU                   | 1500 bytes              |
+| RTT (Round-Trip Time) | 12 ms (0.012 segundos)  |
+| Ancho de Banda        | 1 Gbps (1,000,000,000 bits/segundo) |
+| MSS (Maximum Segment Size) | 1460 bytes       |
+
+### **Paso 1: Calcular el MSS**
+\[
+\text{MSS} = \text{MTU} - \text{Encabezados IP/TCP} = 1500 \, \text{bytes} - 40 \, \text{bytes} = 1460 \, \text{bytes}
+\]
+
+### **Paso 2: Calcular el Bandwidth-Delay Product (BDP)**
+\[
+\text{BDP (bits)} = \text{Ancho de Banda} \times \text{RTT} = 1,000,000,000 \, \text{bits/s} \times 0.012 \, \text{s} = 12,000,000 \, \text{bits}
+\]
+\[
+\text{BDP (bytes)} = \frac{12,000,000 \, \text{bits}}{8} = 1,500,000 \, \text{bytes}
+\]
+
+### **Paso 3: Determinar el Tamaño de la Ventana TCP**
+\[
+\text{Ventana Óptima (bytes)} = \text{BDP} = 1,500,000 \, \text{bytes}
+\]
+\[
+\text{Ventana Óptima (segmentos)} = \frac{\text{BDP}}{\text{MSS}} = \frac{1,500,000 \, \text{bytes}}{1460 \, \text{bytes/segmento}} \approx 1027 \, \text{segmentos}
+\]
+
+
+### Influencia en la Eficiencia de Transmisión
+1. **Ventana = BDP**:  
+   - **Eficiencia del 100%**: Mantiene el enlace saturado sin subutilización.
+   - **Evita congestión**: La ventana no excede la capacidad de la red.
+
+2. **Ventana < BDP**:  
+   - **Subutilización**: El enlace no se aprovecha completamente, reduciendo el rendimiento.
+
+3. **Ventana > BDP**:  
+   - **Congestión**: Satura el búfer de los routers, causando pérdida de paquetes y retransmisiones.
+
+
+
+
