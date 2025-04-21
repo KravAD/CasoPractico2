@@ -1,6 +1,9 @@
 # CasoPractico2
 Enlace Repositorio GitHub --> https://github.com/KravAD/CasoPractico2.git
 
+### Integrantes del grupo
+Gabriel Hernanz Rodriguez, Francisco Ferrer Lopez, Dmitry Kravets Osipov
+
 # Modelado de la Comunicación (OSI/TCP-IP)
 
 | Capa OSI             | Capa TCP/IP     | Función                                                                 |
