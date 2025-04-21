@@ -23,7 +23,7 @@ $$ C = B \cdot \log_2(1 + \text{SNR}) $$
 Donde:
 
 - **C** es la capacidad máxima del canal en bits por segundo (bps).
-- **B** es el ancho de banda del canal (en este caso, 1 Gbps o \( 1 \times 10^9 \) bps, ya que todos los enlaces usan interfaces Gigabit).
+- **B** es el ancho de banda del canal (en este caso, 1 Gbps o \( 1 * 10^9 \) bps, ya que todos los enlaces usan interfaces Gigabit).
 - **SNR** es la relación señal a ruido en forma lineal (no en decibelios), estimada según la distancia del enlace.
 
 ### Conversión de SNR de dB a Lineal
