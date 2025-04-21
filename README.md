@@ -56,5 +56,10 @@ A continuación se presentan los resultados calculados para cada enlace crítico
 - **Distancia:** 3 km
 - **SNR estimado:** 316.2 (25 dB)
 - **Capacidad teórica:** 8.31 Gbps
+  
+### Modulaciones
 
-Estos cálculos permiten identificar los enlaces con mayor carga potencial y evaluar si el diseño actual soporta adecuadamente el tráfico de red esperado.
+- **Gigabit Ethernet (1 Gbps)**: Se utiliza **PAM-5** porque permite una transmisión eficiente sobre cables de cobre utilizando 5 niveles de amplitud.
+- **Fast Ethernet (100 Mbps)**: Se emplea **PAM-4** debido a que necesita 4 niveles de amplitud para transmitir a 100 Mbps de manera confiable.
+- **Comunicaciones inalámbricas (Wi-Fi)**: Se usa **64-QAM** cuando las condiciones de la señal son óptimas, ya que ofrece una alta eficiencia espectral, permitiendo transmitir más bits por símbolo, pero adaptándose a condiciones variables de señal mediante modulación adaptativa.
+
