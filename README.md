@@ -1,7 +1,7 @@
 # CasoPractico2
 Enlace Repositorio GitHub --> https://github.com/KravAD/CasoPractico2.git
 
-# Cálculo de la Capacidad Teórica de los Enlaces Críticos Usando la Fórmula de Shannon
+## Cálculo de la Capacidad Teórica de los Enlaces Críticos Usando la Fórmula de Shannon
 
 Para estimar la capacidad máxima de los enlaces más importantes de la red, se utilizó la fórmula de Shannon:
 
@@ -57,7 +57,7 @@ A continuación se presentan los resultados calculados para cada enlace crítico
 - **SNR estimado:** 316.2 (25 dB)
 - **Capacidad teórica:** 8.31 Gbps
   
-### Modulaciones
+## Modulaciones
 
 - **Gigabit Ethernet (1 Gbps)**: Se utiliza **PAM-5** porque permite una transmisión eficiente sobre cables de cobre utilizando 5 niveles de amplitud.
 - **Fast Ethernet (100 Mbps)**: Se emplea **PAM-4** debido a que necesita 4 niveles de amplitud para transmitir a 100 Mbps de manera confiable.
