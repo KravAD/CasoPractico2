@@ -120,6 +120,11 @@ En IPv6 no existe el broadcast tradicional de IPv4. En su lugar, se utilizan dir
 ## Dijkstra
 ![Imagen de WhatsApp 2025-04-21 a las 23 03 07_5ec83c0c](https://github.com/user-attachments/assets/ec21ceef-efe7-4611-a800-eb7821e4f53c)
 
+## Enrutamiento por inundación 
+En nuestro proyecto, el enrutamiento por inundación puede utilizarse como mecanismo de respaldo si falla alguna ruta entre aulas, bibliotecas o laboratorios. Este método reenvía los paquetes por todas las rutas disponibles, asegurando que los datos lleguen aunque se caiga un enlace o router.
+
+Aunque no es eficiente como sistema principal, resulta útil en situaciones de emergencia, ya que mantiene la comunicación activa mientras se restablece la ruta óptima. Con controles como TTL o identificación de paquetes, se evita la duplicación innecesaria. Es una forma de garantizar tolerancia a fallos en la red implementada.
+
 
 #  Capa de Transporte
 
