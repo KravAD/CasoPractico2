@@ -15,6 +15,8 @@ Donde:
 
 A continuación se presentan los resultados calculados para cada enlace crítico identificado en la topología de red:
 
+
+
 ### Enlace entre el Switch Core y los servidores (Servers-PT) ubicados en un búnker subterráneo a 30 metros
 
 - **Distancia:** 30 metros
