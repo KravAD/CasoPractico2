@@ -234,7 +234,7 @@ Cuando cientos de usuarios piden cosas al mismo tiempo:
 | Servidores (DNS, Web, FTP)           |          3 |                 900   |           2700 |
 | ASA 5506-X (Firewall)                |          1 |                 800   |            800 |
 | Cables de fibra multimodo (LC-LC)    |        200 |                   0.8 |            160 |
-| Cables de cobre Cat6                 |       2500 |                   0.4 |           1000 |
+| Cables de cobre Cat6                 |       2500m |                   0.4 |           1000 |
 | Rack y montaje                       |          1 |                1000   |           1000 |
 | Home Gateway IoT                     |          5 |                 150   |            750 |
 | Detectores de Humo IoT               |          5 |                  50   |            250 |
