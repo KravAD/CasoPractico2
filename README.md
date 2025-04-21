@@ -62,6 +62,12 @@ A continuación se presentan los resultados calculados para cada enlace crítico
 - **SNR estimado:** 10,000 (40 dB)
 - **Capacidad teórica:** 13.29 Gbps
 
+### Enlace entre el Switch Central y el Router de Zona Aulas
+
+- **Distancia:** 200 metros
+- **SNR estimado:** 10,000 (40 dB)
+- **Capacidad teórica:** 13.29 Gbps
+- 
 ### Enlace entre el Switch Central y el Router de la Sala de Videoconferencia
 
 - **Distancia:** 200 metros
