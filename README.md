@@ -151,47 +151,36 @@ Cálculo de Ventana TCP – Markdown
 
 ## Paso 1: Calcular el MSS
 
-math
-\text{MSS} = \text{MTU} - \text{Encabezados IP/TCP} = 1500\,\text{bytes} - 40\,\text{bytes} = 1460\,\text{bytes}
-
+```
+MSS = MTU - Encabezados IP/TCP
+MSS = 1500 bytes - 40 bytes
+MSS = 1460 bytes
+```
 
 ---
 
 ## Paso 2: Calcular el Bandwidth-Delay Product (BDP)
 
-math
-\text{BDP (bits)} = \text{Ancho de Banda} \times \text{RTT} = 1,000,000,000\,\text{bits/s} \times 0.012\,\text{s} = 12,000,000\,\text{bits}
+```
+BDP (bits) = Ancho de Banda × RTT
+BDP (bits) = 1,000,000,000 bits/s × 0.012 s
+BDP (bits) = 12,000,000 bits
 
-
-math
-\text{BDP (bytes)} = \frac{12,000,000\,\text{bits}}{8} = 1,500,000\,\text{bytes}
-
+BDP (bytes) = BDP (bits) ÷ 8
+BDP (bytes) = 12,000,000 bits ÷ 8
+BDP (bytes) = 1,500,000 bytes
+```
 
 ---
 
 ## Paso 3: Determinar el Tamaño de la Ventana TCP
 
-math
-\text{Ventana Óptima (bytes)} = \text{BDP} = 1,500,000\,\text{bytes}
+```
+Ventana Óptima (bytes) = BDP
+Ventana Óptima (bytes) = 1,500,000 bytes
 
-
-math
-\text{Ventana Óptima (segmentos)} = \frac{\text{BDP}}{\text{MSS}} = \frac{1,500,000\,\text{bytes}}{1460\,\text{bytes/segmento}} \approx 1027\,\text{segmentos}
-
-
----
-
-## Influencia en la Eficiencia de Transmisión
-
-### Ventana = BDP:
-- Eficiencia del *100%*: Mantiene el enlace saturado sin subutilización.
-- Evita congestión: La ventana no excede la capacidad de la red.
-
-### Ventana < BDP:
-- *Subutilización*: El enlace no se aprovecha completamente, reduciendo el rendimiento.
-
-### Ventana > BDP:
-- *Congestión*: Satura el búfer de los routers, causando pérdida de paquetes y retransmisiones.
-
-
+Ventana Óptima (segmentos) = BDP ÷ MSS
+Ventana Óptima (segmentos) = 1,500,000 bytes ÷ 1460 bytes/segmento
+Ventana Óptima (segmentos) ≈ 1027 segmentos
+```
 
