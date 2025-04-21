@@ -116,3 +116,7 @@ En IPv6 no existe el broadcast tradicional de IPv4. En su lugar, se utilizan dir
   
 - **Hosts por subred**: Cada subred `/64` permite hasta **2^64 hosts** (≈ 18 trillones de direcciones).
 - **Formato de direcciones**: Los hosts válidos van desde `<prefijo>::1` hasta `<prefijo>:0:ffff:ffff:ffff:ffff`.
+
+## Dijkstra
+![Imagen de WhatsApp 2025-04-21 a las 23 03 07_5ec83c0c](https://github.com/user-attachments/assets/ec21ceef-efe7-4611-a800-eb7821e4f53c)
+
