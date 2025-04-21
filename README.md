@@ -26,41 +26,55 @@ Donde:
 - **B** es el ancho de banda del canal (en este caso, 1 Gbps o \( 1 \times 10^9 \) bps, ya que todos los enlaces usan interfaces Gigabit).
 - **SNR** es la relación señal a ruido en forma lineal (no en decibelios), estimada según la distancia del enlace.
 
+### Conversión de SNR de dB a Lineal
+
+Para convertir la **Relación Señal a Ruido (SNR)** de **dB** a **forma lineal**, se utiliza la siguiente fórmula:
+
+\[
+SNR_{lineal} = 10^{\frac{SNR_{dB}}{10}}
+\]
+
 A continuación se presentan los resultados calculados para cada enlace crítico identificado en la topología de red:
 
 
 
-### Enlace entre el Switch central y los servidores (Servers-PT) ubicados en un búnker subterráneo a 30 metros
+### Enlace entre el Switch central y los servidores (Servers-PT) ubicados en un búnker subterráneo a **1.5 km y 30 metros bajo tierra**
 
-- **Distancia:** 30 metros
-- **SNR estimado:** 3162.3 (equivalente a 35 dB)
-- **Capacidad teórica:** 11.63 Gbps
+- **Distancia:** 1.5 km + 30 metros subterráneos  
+- **SNR estimado:** 2630 (equivalente a 34.2 dB)  
+- **Capacidad teórica:** 11.36 Gbps
 
-### Enlace entre el Switch central y el Router de Secretaría
+### Enlace entre el Router Externo y los servidores (Servers-PT) ubicados en un búnker subterráneo a **1.5 km y 30 metros bajo tierra**
+
+- **Distancia:** 1.5 km + 30 metros subterráneos  
+- **SNR estimado:** 2630 (equivalente a 34.2 dB)  
+- **Capacidad teórica:** 11.36 Gbps  
+
+### Enlace entre el Switch Central y el Router de Secretaría
 
 - **Distancia:** 200 metros
 - **SNR estimado:** 10,000 (equivalente a 40 dB)
 - **Capacidad teórica:** 13.29 Gbps
 
-### Enlace entre el Switch central y el Router del Recinto
+### Enlace entre el Switch Central y el Router del Recinto
 
 - **Distancia:** 200 metros
 - **SNR estimado:** 10,000 (40 dB)
 - **Capacidad teórica:** 13.29 Gbps
 
-### Enlace entre el Switch central y el Router de la Sala de Videoconferencia
+### Enlace entre el Switch Central y el Router de la Sala de Videoconferencia
 
 - **Distancia:** 200 metros
 - **SNR estimado:** 10,000 (40 dB)
 - **Capacidad teórica:** 13.29 Gbps
 
-### Enlace entre el Switch central y el Router del Laboratorio
+### Enlace entre el Switch Central y el Router del Laboratorio
 
 - **Distancia:** 200 metros
 - **SNR estimado:** 10,000 (40 dB)
 - **Capacidad teórica:** 13.29 Gbps
 
-### Enlace entre el Switch central y el Router Externo, que representa otro edificio a 3 km de distancia
+### Enlace entre el Switch Central y el Router Externo, que representa otro edificio a 3 km de distancia
 
 - **Distancia:** 3 km
 - **SNR estimado:** 316.2 (25 dB)
